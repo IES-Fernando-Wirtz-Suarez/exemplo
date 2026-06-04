@@ -1,0 +1,62 @@
+theme:
+  name: material
+  highlightjs: True
+  hljs_style: shades-of-purple
+  locale: es
+  language: gl
+  include_homepage_in_sidebar: True
+  prev_next_buttons_location: both
+  favicon: "images/favicon.ico"
+  logo: "images/logo.png"
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - navigation.indexes
+    - toc.follow
+#    - toc.integrate
+    - navigation.top
+    - navigation.path
+    - navigation.prune
+  palette:
+  - scheme: default
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Modo oscuro
+  - scheme: slate
+    toggle:
+      icon: material/toggle-switch
+      name: Modo normal
+      primary: green
+      accent: ambe
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+#          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+nav:
+  - "🏠️ Inicio": "index.md"
+  - "🔴 Importante":
+      - "1.1 Introducción": "categoria11.md"
+      - "1.2 Punto final": "categoria12.md"
+  - "🔵 Esencial":
+    - "2.1 Algo": "esencial21.md"
+    - "2.2 Nada": "esencial22.md"
+
+site_name: Repositorio de Exemplo
+site_url: https://git.fernandowirtz.com/exemplo
+repo_name: IES-Fernando-Wirtz-Suarez/exemplo
+repo_url: https://github.com/IES-Fernando-Wirtz-Suarez/exemplo/
+site_author: IES Fernando Wirtz Suárez
+copyright: 2026 ©️  IES Fernando Wirtz Suárez
+
